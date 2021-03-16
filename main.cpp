@@ -3,42 +3,42 @@
 
 Keyboard::Keyboard(QWidget *parent) : QDialog(parent)
 {
-    //sets keyboard object dimensions
-    if (this->objectName().isEmpty())
-        this->setObjectName(QString::fromUtf8("Keyboard"));
-    this->resize(720, 540);
-    
-    //creates button object pointers
-    m_0, m_1, m_2, m_3, m_4, m_5, m_6, m_7, m_8, m_9 = new QPushButton(this);
-    m_a, m_b, m_c, m_d, m_e, m_f, m_g, m_h, m_i, m_j = new QPushButton(this);
-    m_k, m_l, m_m, m_n, m_o, m_p, m_q, m_r, m_s, m_t = new QPushButton(this);
-    m_u, m_v, m_w, m_x, m_y, m_z = new QPushButton(this);
-  
-    m_tilde, m_grave, m_exclaim, m_at = new QPushButton(this);
-    m_pound, m_dollar, m_percent, m_circum = new QPushButton(this);
-    m_ampersan, m_star, m_lparen, m_rparen = new QPushButton(this);
-    m_hyphen, m_undersc, m_equal, m_plus = new QPushButton(this);
-    m_lbracket, m_rbracket, m_lcurly, m_rcurly = new QPushButton(this);
-    m_bslash, m_straight, m_semic, m_colon = new QPushButton(this);
-    m_squote, m_dquote, m_comma, m_period = new QPushButton(this);
-    m_lthan, m_gthan, m_fslash, m_qmark = new QPushButton(this);
+	//sets keyboard object dimensions
+	if (this->objectName().isEmpty())
+		this->setObjectName(QString::fromUtf8("Keyboard"));
+	this->resize(720, 540);
 
-    m_ok, m_esc, m_tab, m_backspc, m_space, m_enter = new QPushButton(this);
-    m_display = new QLineEdit(this);
+	//creates button object pointers
+	m_0, m_1, m_2, m_3, m_4, m_5, m_6, m_7, m_8, m_9 = new QPushButton(this);
+	m_a, m_b, m_c, m_d, m_e, m_f, m_g, m_h, m_i, m_j = new QPushButton(this);
+	m_k, m_l, m_m, m_n, m_o, m_p, m_q, m_r, m_s, m_t = new QPushButton(this);
+	m_u, m_v, m_w, m_x, m_y, m_z = new QPushButton(this);
 
-    //sets each button's object
-    m_0->setObjectName      (QString::fromUtf8("m_0"));
-    m_1->setObjectName      (QString::fromUtf8("m_1"));
-    m_2->setObjectName      (QString::fromUtf8("m_2"));
-    m_3->setObjectName      (QString::fromUtf8("m_3"));
-    m_4->setObjectName      (QString::fromUtf8("m_4"));
-    m_5->setObjectName      (QString::fromUtf8("m_5"));
-    m_6->setObjectName      (QString::fromUtf8("m_6"));
-    m_7->setObjectName      (QString::fromUtf8("m_7"));
-    m_8->setObjectName      (QString::fromUtf8("m_8"));
-    m_9->setObjectName      (QString::fromUtf8("m_9"));
+	m_tilde, m_grave, m_exclaim, m_at = new QPushButton(this);
+	m_pound, m_dollar, m_percent, m_circum = new QPushButton(this);
+	m_ampersan, m_star, m_lparen, m_rparen = new QPushButton(this);
+	m_hyphen, m_undersc, m_equal, m_plus = new QPushButton(this);
+	m_lbracket, m_rbracket, m_lcurly, m_rcurly = new QPushButton(this);
+	m_bslash, m_straight, m_semic, m_colon = new QPushButton(this);
+	m_squote, m_dquote, m_comma, m_period = new QPushButton(this);
+	m_lthan, m_gthan, m_fslash, m_qmark = new QPushButton(this);
 
-    m_a->setObjectName      (QString::fromUtf8("m_a"));      
+	m_ok, m_esc, m_tab, m_backspc, m_space, m_enter = new QPushButton(this);
+	m_display = new QLineEdit(this);
+
+	//sets each button's object
+	m_0->setObjectName      (QString::fromUtf8("m_0"));
+	m_1->setObjectName      (QString::fromUtf8("m_1"));
+	m_2->setObjectName      (QString::fromUtf8("m_2"));
+	m_3->setObjectName      (QString::fromUtf8("m_3"));
+	m_4->setObjectName      (QString::fromUtf8("m_4"));
+	m_5->setObjectName      (QString::fromUtf8("m_5"));
+	m_6->setObjectName      (QString::fromUtf8("m_6"));
+	m_7->setObjectName      (QString::fromUtf8("m_7"));
+	m_8->setObjectName      (QString::fromUtf8("m_8"));
+	m_9->setObjectName      (QString::fromUtf8("m_9"));
+
+	m_a->setObjectName      (QString::fromUtf8("m_a"));      
 	m_b->setObjectName      (QString::fromUtf8("m_b"));      
 	m_c->setObjectName      (QString::fromUtf8("m_c"));      
 	m_d->setObjectName      (QString::fromUtf8("m_d"));      
@@ -186,15 +186,15 @@ Keyboard::Keyboard(QWidget *parent) : QDialog(parent)
 	m_enter->setGeometry(         QRect(320 , 480, 111 , 51 ));        
 	m_display->setGeometry(       QRect(20 , 10 , 711, 41 ));
 
-    retranslateUi(this);
+	retranslateUi(this);
 
-    QMetaObject::connectSlotsByName(this);
+	QMetaObject::connectSlotsByName(this);
 }
 
 //sets the button text on the gui
 void Keyboard::retranslateUi(QDialog *n)
 {
-    n->setWindowTitle(QApplication::translate("Keyboard", "Dialog", 0, QApplication::UnicodeUTF8));
+	n->setWindowTitle(QApplication::translate("Keyboard", "Dialog", 0, QApplication::UnicodeUTF8));
 
 	m_0->setText(  QApplication::translate("Keyboard", "0", 0, QApplication::UnicodeUTF8));       
 	m_1->setText(  QApplication::translate("Keyboard", "1", 0, QApplication::UnicodeUTF8));       
