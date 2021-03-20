@@ -21,7 +21,4 @@ n m T B O E , . < > / ?
 
 SPACE      ENTER         
 
-Note that T = Tab
-          B = Backspace
-          O = Ok
-          E = Esc
+Note that T = Tab, B = Backspace, O = Ok, E = Esc
