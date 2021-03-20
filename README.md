@@ -1,5 +1,5 @@
 # on-screen-keyboard
-Custom on-screen keyboard GUI in C++ developed via the Qt framework suite.
+Custom on-screen keyboard GUI in C++ developed via the Qt framework suite. The keyboard is written so the shift key does not need to be used to input characters.
 
 The keyboard keys are arranged in eight rows, with each row containing ten keys.
 
